@@ -7,7 +7,7 @@
 
 
 
-[![](https://jitpack.io/v/BarOvda/CircularRatingWithAvatar)](https://jitpack.io/#BarOvda/CircularRatingWithAvatar/1.0)
+[![](https://jitpack.io/v/BarOvda/CircularRatingWithAvatar.svg)](https://jitpack.io/#BarOvda/CircularRatingWithAvatar/1.0)
 
 ## Setup
 
