@@ -1,0 +1,3 @@
+include ':CircularRatingWithRatingTextLibrary'
+include ':app'
+rootProject.name = "CircularRatingWithAvatar"
