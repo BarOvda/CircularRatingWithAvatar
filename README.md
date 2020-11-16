@@ -6,6 +6,9 @@
 | <img src="/pics/sample1.gif" alt="Example 1" width="300" style="max-width:100%;"> | <img src="/pics/sample2.gif" alt="Example 1" width="300" style="max-width:100%;">  |
 
 
+
+[![](https://jitpack.io/v/BarOvda/CircularRatingWithAvatar)](https://jitpack.io/#BarOvda/CircularRatingWithAvatar/1.0)
+
 ## Setup
 
 Step 1. Add the JitPack repository to your build file
