@@ -1,8 +1,9 @@
 # CircularRatingWithAvatar
+A custom android component to show rating with colorful circular view 
 ### Samples
 |   |   |
 |:-:|:-:|
-| <img  src="/sample1.gif" alt="Example 1" width="200" style="max-width:100%;"> | <img  src="/sample2.png" alt="Example 1" width="300" style="max-width:100%;"> |
+| <img  src="/sample1.gif" alt="Example 1" width="200" style="max-width:100%;"> | <img  src="/sample2.gif" alt="Example 1" width="300" style="max-width:100%;"> |
 | <img src="/sample3.gif" alt="Example 1" width="300" style="max-width:100%;"> | 
 
 
@@ -25,3 +26,28 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.BarOvda:CircularRatingWithAvatar:Tag'
 	}
+	
+	
+	
+	## XML
+```
+    <com.example.circularratingwithavatarlibrary.ProgressTextView
+        android:id="@+id/progress_circular2"
+        android:layout_width="184dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="204dp"
+        app:current_rating="6.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:max_rating="10">
+
+    </com.example.circularratingwithavatarlibrary.ProgressTextView>
+
+```
+
+Here is the list of properties you must use to configure this view:
+ 1. app:max_rating (float)  ==> sets the maximum value of rating
+ 2. app:current_rating (float) ==> sets the rating
