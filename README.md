@@ -29,7 +29,7 @@ Step 2. Add the dependency
 	
 	
 	
-	## XML
+## XML
 ```
     <com.example.circularratingwithavatarlibrary.ProgressTextView
         android:id="@+id/progress_circular2"
