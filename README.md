@@ -3,8 +3,8 @@ A custom android component to show rating with colorful circular view
 ### Samples
 |   |   |
 |:-:|:-:|
-| <img  src="/sample1.gif" alt="Example 1" width="200" style="max-width:100%;"> | <img  src="/sample2.gif" alt="Example 1" width="300" style="max-width:100%;"> |
-| <img src="/sample3.gif" alt="Example 1" width="300" style="max-width:100%;"> | 
+| <img  src="/sample4.gif" alt="Example 1" width="200" style="max-width:100%;"> | <img  src="/sample5.gif" alt="Example 1" width="300" style="max-width:100%;"> |
+| <img src="/sample6.gif" alt="Example 1" width="300" style="max-width:100%;"> | 
 
 
 
