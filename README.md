@@ -2,8 +2,8 @@
 ### Samples
 |   |   |
 |:-:|:-:|
-| <img  src="/pics/ex1.png" alt="Example 1" width="300" style="max-width:100%;"> | <img  src="/pics/ex2.png" alt="Example 1" width="300" style="max-width:100%;"> |
-| <img src="/sample1.gif" alt="Example 1" width="300" style="max-width:100%;"> | <img src="/pics/sample2.gif" alt="Example 1" width="300" style="max-width:100%;">  |
+| <img  src="/sample1.gif" alt="Example 1" width="200" style="max-width:100%;"> | <img  src="/sample2.png" alt="Example 1" width="300" style="max-width:100%;"> |
+| <img src="/sample3.gif" alt="Example 1" width="300" style="max-width:100%;"> | 
 
 
 
