@@ -38,16 +38,22 @@ Step 2. Add the dependency
         android:layout_marginStart="84dp"
         android:layout_marginLeft="84dp"
         android:layout_marginTop="204dp"
-        app:current_rating="6.0"
+        app:current_rating="8"
+        app:mid_color = "@color/mid_color"
+        app:low_color = "@color/min_color"
+        app:high_color = "@color/high_color"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
         app:max_rating="10">
 
-    </com.example.circularratingwithavatarlibrary.ProgressTextView>
 
 ```
 
-Here is the list of properties you must use to configure this view:
- 1. app:max_rating (float)  ==> sets the maximum value of rating
- 2. app:current_rating (float) ==> sets the rating
+Here is the list of properties you can use to configure this view:
+ 1. app:max_rating (float)  ==> sets the maximum value of rating (deafult value:100)
+ 2. app:current_rating (float) ==> sets the rating (deafult value:0)
+ 3. app:low_color (float)  ==> sets the maximum value of rating (deafult value:#FFDC1D1D)
+ 4. app:mid_color (float) ==> sets the rating (deafult value:#FFB5B208)
+ 5. app:high_color (float)  ==> sets the maximum value of rating (deafult value:#FF20BA05)
+ 
