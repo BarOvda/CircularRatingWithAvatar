@@ -8,7 +8,7 @@ A custom android component to show rating with colorful circular view
 
 
 
-[![](https://jitpack.io/v/BarOvda/CircularRatingWithAvatar.svg)](https://jitpack.io/#BarOvda/CircularRatingWithAvatar/1.0)
+[![](https://jitpack.io/v/BarOvda/CircularRatingWithAvatar.svg)](https://jitpack.io/#BarOvda/CircularRatingWithAvatar/1.1)
 
 ## Setup
 
