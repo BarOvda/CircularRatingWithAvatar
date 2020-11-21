@@ -10,12 +10,15 @@
 
     <com.example.circularratingwithavatarlibrary.ProgressTextView
         android:id="@+id/progress_circular2"
-        android:layout_width="222dp"
-        android:layout_height="182dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="184dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="204dp"
         app:current_rating="8"
+        app:mid_color = "@color/mid_color"
+        app:low_color = "@color/min_color"
+        app:high_color = "@color/high_color"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"

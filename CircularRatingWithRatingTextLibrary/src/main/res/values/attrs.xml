@@ -4,6 +4,9 @@
     <declare-styleable name="ProgressImageView">
         <attr name="max_rating" format="float"/>
         <attr name="current_rating" format="float"/>
+        <attr name="mid_color" format="color"/>
+        <attr name="high_color" format="color"/>
+        <attr name="low_color" format="color"/>
 
     </declare-styleable>
 

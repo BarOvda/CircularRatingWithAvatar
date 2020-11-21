@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
@@ -24,6 +25,8 @@ import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
+import java.text.DecimalFormat;
+
 public class ProgressTextView extends FrameLayout {
     public static final int DEFAULT_MAX_RATING = 100;
     public static final int DEFAULT_RATING = 0;
@@ -31,8 +34,9 @@ public class ProgressTextView extends FrameLayout {
     private TextView ratingTextView;
     private float rating;
     private float maxRating;
-//    private CustomImageView mImageView;
-
+    private int lowColor;
+    private int midColor;
+    private int highColor;
         public ProgressTextView(Context context) {
             super(context);
              init(context,null);
@@ -73,9 +77,11 @@ public class ProgressTextView extends FrameLayout {
 
             try {
                 if (attributeSet != null) {
-                    maxRating = (float) a.getFloat(R.styleable.ProgressImageView_max_rating, DEFAULT_MAX_RATING);
-                    rating = (float) a.getFloat(R.styleable.ProgressImageView_current_rating, DEFAULT_RATING);
-
+                    this.maxRating = (float) a.getFloat(R.styleable.ProgressImageView_max_rating, DEFAULT_MAX_RATING);
+                    this.rating = (float) a.getFloat(R.styleable.ProgressImageView_current_rating, DEFAULT_RATING);
+                    this.highColor = (int) a.getColor(R.styleable.ProgressImageView_high_color,getResources().getColor(R.color.high_color));
+                    this.midColor = (int) a.getColor(R.styleable.ProgressImageView_mid_color,getResources().getColor(R.color.mid_color));
+                    this.lowColor = (int) a.getColor(R.styleable.ProgressImageView_low_color,getResources().getColor(R.color.min_color));
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
@@ -84,47 +90,13 @@ public class ProgressTextView extends FrameLayout {
 
 
             ratingTextView = progressbar.findViewById(R.id.rating_text);
-            ratingTextView.setText((double)rating+"");
 
-
-            int currentRatingBais = (int)rating*100;
-            int maxRatingBais = (int)maxRating*100;
-            mProgressBar.setMax(maxRatingBais);
-            ObjectAnimator animation = ObjectAnimator.ofInt(this.mProgressBar, "progress", 0, currentRatingBais);
-
-            animation.setInterpolator(new DecelerateInterpolator());
-            animation.addListener(new Animator.AnimatorListener() {
-                @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-                @Override
-                public void onAnimationStart(Animator animation) {
-
-                    if(rating<maxRating/3){
-                        mProgressBar.setProgressTintList(ColorStateList.valueOf(0XFFAC2323));
-                    }else if( rating<maxRating*2/3){
-                        mProgressBar.setProgressTintList(ColorStateList.valueOf(0XFFACAA23));
-                    }else{
-                        mProgressBar.setProgressTintList(ColorStateList.valueOf(0XFF3CAC23));
-                    }
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-
-                }
-
-                @Override
-                public void onAnimationCancel(Animator animation) {
-
-                }
-
-                @Override
-                public void onAnimationRepeat(Animator animation) {
-               //     progressBar.setProgress(100);
-                }
-            });
-
-
-            animation.start();
+            DecimalFormat df = new DecimalFormat();
+            df.setMaximumFractionDigits(2);
+            df.setMinimumFractionDigits(1);
+            this.ratingTextView.setText(df.format(rating)+"");
+            this.mProgressBar.initAnimation(rating,maxRating,highColor,midColor,
+                    lowColor);
         }
 
 

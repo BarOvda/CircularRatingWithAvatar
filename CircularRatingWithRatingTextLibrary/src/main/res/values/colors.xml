@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="min_color">#FFDC1D1D</color>
+    <color name="mid_color">#FFB5B208</color>
+    <color name="high_color">#FF20BA05</color>
+
+</resources>
