@@ -2,9 +2,10 @@ package com.example.circularratingwithavatar;
 
 import android.os.Bundle;
 
-import com.example.circularratingwithavatarlibrary.ProgressTextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.circularratingwithavatarlibrary.ProgressTextView;
 
 public class MainActivity extends AppCompatActivity {
     private ProgressTextView progressImageView;
