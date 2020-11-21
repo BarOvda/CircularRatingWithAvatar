@@ -32,7 +32,7 @@ Step 2. Add the dependency
 ## XML
 ```
     <com.example.circularratingwithavatarlibrary.ProgressTextView
-        android:id="@+id/progress_circular2"
+        android:id="@+id/circular_rating_bar"
         android:layout_width="184dp"
         android:layout_height="150dp"
         android:layout_marginStart="84dp"
@@ -46,6 +46,7 @@ Step 2. Add the dependency
 
         app:layout_constraintTop_toTopOf="parent"
         app:max_rating="10">
+    </com.example.circularratingwithavatarlibrary.ProgressTextView>
 
 
 ```
